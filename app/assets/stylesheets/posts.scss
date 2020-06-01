@@ -1,0 +1,48 @@
+.post {
+  margin: 3em 0;
+}
+
+body{
+background-color: #ccc;
+padding: 20px 100px;
+
+}
+.flex__container{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0;
+}
+
+.flex__form{
+display: flex;
+width: 60%;
+// text-align: center;
+// justify-content: center;
+background-color: rgba(0,0,0,.5);
+border-radius: 20px;
+padding: 20px 20px;
+flex-direction: column;
+}
+h1{
+background-color: #aaa;
+color: white;
+border-radius: 3px;
+display: block;
+margin: 0 auto;
+padding: 5px;
+text-align: center;
+font-size: 12xp;
+}
+label{
+color: white;
+}
+h1{
+  text-align: center;
+}
+a{
+  color: #fff;
+}
+ #create{
+   color: rgb(50,200,50);
+ }

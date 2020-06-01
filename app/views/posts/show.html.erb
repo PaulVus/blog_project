@@ -1,0 +1,26 @@
+
+<div class="flex__container">
+  <div class="flex__form">
+    <div class="form-group">
+      <h1><%= @post.title %></h1>
+    </div>
+    <div class="form-group">
+      <p><%= @post.category.name %></p>
+      <p><%= @post.created_at %></p>
+    </div>
+    <div class="form-group">
+      <p><%= @post.text %></p>
+    </div>
+
+    <div class="form-group">
+
+  <%= link_to 'Edit', edit_post_path(@post.id) %>
+    </div>
+    <div class="form-group">
+    <%=   link_to 'Delete', post_path(@post.id), method: :delete,
+        data: { confirm: "Are you sure?" }, remote: true %>
+
+    </div>
+  <%= link_to 'Back to posts', posts_path %>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<h1>
+  <%= @category&.name || "All"%> posts
+</h1>
+<% if @category%>
+  <%= link_to "All posts", posts_path %>
+
+<% end%>
+
+
+<!-- <%= link_to "Create new post", new_post_path %>
+
+<div class="post-container">
+  <% @posts.each do |post| %>
+  <div class="post">
+    <%= link_to post do%>
+    <h3><%= post.title %></h3>
+    <% end %>
+    <%= link_to post.category.name, category_posts_path(category_handle: post.category.handle)%>
+    <p><%= post.created_at %></p>
+    <p><%= post.text %></p>
+  </div>
+  <% end %>
+
+</div> -->
+<div class="flex__container">
+    <%= link_to "Create new post", new_post_path, id: "create"%>
+  </div>
+</div>
+
+<div class="flex__container">
+  <div class="flex__form">
+
+  <% @posts.each do |post| %>
+    <div class="form-group">
+      <%= link_to post do%>
+      <h3><%= post.title %></h3>
+      <% end %>
+      <%= link_to post.category.name, category_posts_path(category_handle: post.category.handle)%>
+      <p><%= post.created_at %></p>
+      <p><%= post.text %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
